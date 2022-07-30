@@ -3,18 +3,40 @@
 {% block content %}
         <div class="container" style="padding: 30px">
             <h2> Beverages</h2>
-            <div class="row" style="padding: 25px">
-                {% for drink in drinks %}
-                    <div class="col-6 col-lg-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h2 class="card-title">{{ drink.name }}</h2>
-                            <p class="card-text"><strong>Price  </strong> {{ drink.price }}</p>
-                            <p class="card-text"> <strong>Size  </strong> <i>{{ drink.size }}</i></p>
+            <div class="row">
+                <div class="col">
+                    <div class="row" style="padding: 25px">
+                    {% for drink in drinks %}
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body" style="padding-top: 15px">
+                                    <h2 class="card-title">{{ drink.name }}</h2>
+                                    <p class="card-text"><strong>Price  </strong> {{ drink.price }}</p>
+                                    <p class="card-text"> <strong>Size  </strong> <i>{{ drink.size }}</i></p>
+                                </div>
+                            </div>
                         </div>
+                    {% endfor %}
                     </div>
                 </div>
-                {% endfor %}
+                <div class="col">
+                    <form>
+                      <label for="name">Drink name:</label><br>
+                      <input type="text" id="name" name="name"><br>
+                      <label for="cat">Category:</label><br>
+                      <input type="text" id="cat" name="cat"><br>
+                      <label for="price">Price:</label><br>
+                      <input type="text" id="price" name="price"><br>
+                      <label for="size">Size:</label><br>
+                      <input type="radio" id="html" name="size" value="tall">
+                      <label for="tall">tall</label><br>
+                      <input type="radio" id="css" name="size" value="grande">
+                      <label for="grande">grande</label><br>
+                      <input type="radio" id="javascript" name="sizee" value="venti">
+                      <label for="venti">venti</label><br>
+                      <input type="submit" value="Add beverage">
+                    </form>
+                </div>
             </div>
         </div>
 {% endblock %}
