@@ -19,15 +19,6 @@
                     {% endfor %}
                     </div>
                 </div>
-
-                <div class="col">
-                    <form method="POST" action="{% url 'home' %}" enctype="multipart/form-data" style="align-content: center; padding-left: 20px">
-                        {% csrf_token %}
-                        {{ data.as_p }}
-                        <button class="button is-success is-fullwidth is-medium mt-5"
-                                type="submit">Add Drink</button>
-                    </form>
-                </div>
             </div>
         </div>
 {% endblock %}
