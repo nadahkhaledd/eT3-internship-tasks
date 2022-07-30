@@ -6,6 +6,17 @@
 
 ##
 
+- ### *Tools used for data science*
+1. Python (pandas, numpy, matplotlib)
+
+##
+
+- ### *Tools used for backend*
+1. Python
+2. Django
+
+##
+
 ### Screenshots of backend UI  
 ###
 #### http://127.0.0.1:8000/home/
