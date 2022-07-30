@@ -20,7 +20,6 @@ from coffeeshop import views as coffee_views
 app_name = 'coffeeshop'
 urlpatterns = [
     path("", coffee_views.all, name="home"),
-    path('home/', coffee_views.all),
     path('admin/', admin.site.urls),
 ]
 

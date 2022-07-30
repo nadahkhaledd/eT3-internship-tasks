@@ -30,6 +30,15 @@ class DrinkForm(forms.ModelForm):
 
     size = forms.RadioSelect(choices=['Tall', 'Grande', 'Venti'])
 
+    ingredients = forms.CharField(required=True,
+                           widget=forms.widgets.TextInput(
+                               attrs={
+                                   "placeholder": "Ingredients",
+                                   "class": "textinput is-success is-medium",
+                               }
+                           ),
+                           label="ingredients", )
+
     class Meta:
         model = beverage
-        exclude = ['ingredients']
+        fields = '__all__'
