@@ -19,22 +19,13 @@
                     {% endfor %}
                     </div>
                 </div>
+
                 <div class="col">
-                    <form>
-                      <label for="name">Drink name:</label><br>
-                      <input type="text" id="name" name="name"><br>
-                      <label for="cat">Category:</label><br>
-                      <input type="text" id="cat" name="cat"><br>
-                      <label for="price">Price:</label><br>
-                      <input type="text" id="price" name="price"><br>
-                      <label for="size">Size:</label><br>
-                      <input type="radio" id="html" name="size" value="tall">
-                      <label for="tall">tall</label><br>
-                      <input type="radio" id="css" name="size" value="grande">
-                      <label for="grande">grande</label><br>
-                      <input type="radio" id="javascript" name="sizee" value="venti">
-                      <label for="venti">venti</label><br>
-                      <input type="submit" value="Add beverage">
+                    <form method="post" style="align-content: center; padding-left: 20px">
+                        {% csrf_token %}
+                        {{ data.as_p }}
+                        <button class="button is-success is-fullwidth is-medium mt-5"
+                                type="submit">Add Drink</button>
                     </form>
                 </div>
             </div>
