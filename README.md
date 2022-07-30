@@ -8,7 +8,8 @@
 
 ### Screenshot of backend UI  
 ###
-![coffee](https://user-images.githubusercontent.com/63652516/181905751-47c9a3d5-a58b-4cb1-a12e-398c20c17171.PNG)
+![coffee](https://user-images.githubusercontent.com/63652516/181916768-6f490ce1-7520-46ff-acf5-4f66796bb60f.PNG)
+
 
 ###
 ### Instructions for backend
