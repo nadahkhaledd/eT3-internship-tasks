@@ -6,9 +6,14 @@
 
 ##
 
-### Screenshot of backend UI  
+### Screenshots of backend UI  
 ###
-![coffee](https://user-images.githubusercontent.com/63652516/181916768-6f490ce1-7520-46ff-acf5-4f66796bb60f.PNG)
+#### http://127.0.0.1:8000/home/
+![home](https://user-images.githubusercontent.com/63652516/181924950-7f3164fe-466b-4f21-8cea-ada6c6e7dd42.PNG)
+
+### 
+#### http://127.0.0.1:8000/add/
+![sec](https://user-images.githubusercontent.com/63652516/181924969-80cedfbf-7c65-4d04-b34f-be084e46227a.PNG)
 
 
 ###
@@ -21,5 +26,9 @@ python manage.py runserver
 ```
 
 ```
-go to http://127.0.0.1:8000/
+to see all drinks:
+go to http://127.0.0.1:8000/home/
+
+to add new one
+http://127.0.0.1:8000/add/
 ```
